@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme inline {
+  --color-sand-50: #fdfbf7;
+  --color-sand-100: #f6f2e9;
+  --color-sand-200: #eae1cc;
+  --color-sand-300: #dcc8ab;
+  --color-sand-400: #cca782;
+  --color-sand-500: #c08b61;
+  --color-sand-600: #b3734e;
+  --color-sand-700: #965a41;
+  --color-sand-800: #7c4a39;
+  --color-sand-900: #643e30;
+
+  --color-warn-green: #22c55e;
+  --color-warn-yellow: #eab308;
+  --color-warn-red: #ef4444;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: var(--color-sand-50);
+  --foreground: #1e293b;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Fix for Leaflet images if needed */
+.leaflet-container {
+  font-family: var(--font-sans);
+}
+
