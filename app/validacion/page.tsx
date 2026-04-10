@@ -25,8 +25,8 @@ export default function ValidationPage() {
   return (
     <div className="p-6 md:p-12 space-y-12 max-w-6xl mx-auto">
       <div>
-        <h2 className="text-3xl font-heading font-bold text-sand-900">Validación y Casos de Estudio</h2>
-        <p className="text-sand-600 mt-2 text-lg">
+        <h2 className="text-3xl font-heading font-bold text-nature-900">Validación y Casos de Estudio</h2>
+        <p className="text-nature-600 mt-2 text-lg">
           Análisis del comportamiento del sistema durante eventos críticos en la Cuenca del Arroyo Mburicaó.
         </p>
       </div>
@@ -37,7 +37,7 @@ export default function ValidationPage() {
         <Card className="flex flex-col">
           <CardHeader>
             <CardTitle>Nivel de Agua vs. Precipitación</CardTitle>
-            <p className="text-xs text-sand-500">Evento de lluvia extrema - Mburicaó (Caso de prueba)</p>
+            <p className="text-xs text-nature-500">Evento de lluvia extrema - Mburicaó (Caso de prueba)</p>
           </CardHeader>
           <CardContent className="flex-1 min-h-[350px]">
             <ResponsiveContainer width="100%" height={300}>
@@ -65,7 +65,7 @@ export default function ValidationPage() {
         <Card className="flex flex-col">
           <CardHeader>
             <CardTitle>Aporte de Datos por Fuente</CardTitle>
-            <p className="text-xs text-sand-500">Comparativa de densidad de reportes en zona crítica</p>
+            <p className="text-xs text-nature-500">Comparativa de densidad de reportes en zona crítica</p>
           </CardHeader>
           <CardContent className="flex-1 min-h-[350px]">
             <ResponsiveContainer width="100%" height={300}>
@@ -82,10 +82,10 @@ export default function ValidationPage() {
 
       </div>
 
-      <Card className="bg-sand-800 text-white border-transparent">
+      <Card className="bg-nature-800 text-white border-transparent">
         <CardContent className="p-8 space-y-4">
           <h3 className="font-heading font-bold text-xl mb-4">Resultados de Validación Piloto</h3>
-          <ul className="space-y-3 text-sand-200">
+          <ul className="space-y-3 text-nature-200">
             <li className="flex gap-2 items-start text-sm">
               <CheckCircle2 size={18} className="text-warn-green shrink-0 mt-0.5" />
               <span>El umbral amarillo o rojo en los marcadores concuerda fuertemente con los reportes de calles intransitables.</span>

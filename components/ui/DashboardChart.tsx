@@ -20,4 +20,4 @@ export const DynamicChart = dynamic(() => Promise.resolve(({ data }: { data: any
       <Area type="monotone" name="Nivel Promedio (cm)" dataKey="level" stroke="#3b82f6" fillOpacity={1} fill="url(#colorWaterDashboard)" />
     </AreaChart>
   </ResponsiveContainer>
-)), { ssr: false, loading: () => <div className="h-full w-full animate-pulse bg-sand-100 rounded-lg"></div> });
+)), { ssr: false, loading: () => <div className="h-full w-full animate-pulse bg-nature-100 rounded-lg"></div> });

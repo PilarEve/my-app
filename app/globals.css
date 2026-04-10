@@ -2,16 +2,16 @@
 @import "leaflet/dist/leaflet.css";
 
 @theme inline {
-  --color-sand-50: #fdfbf7;
-  --color-sand-100: #f6f2e9;
-  --color-sand-200: #eae1cc;
-  --color-sand-300: #dcc8ab;
-  --color-sand-400: #cca782;
-  --color-sand-500: #c08b61;
-  --color-sand-600: #b3734e;
-  --color-sand-700: #965a41;
-  --color-sand-800: #7c4a39;
-  --color-sand-900: #643e30;
+  --color-nature-50: #f0fdf4;
+  --color-nature-100: #dcfce7;
+  --color-nature-200: #bbf7d0;
+  --color-nature-300: #86efac;
+  --color-nature-400: #4ade80;
+  --color-nature-500: #22c55e;
+  --color-nature-600: #16a34a;
+  --color-nature-700: #15803d;
+  --color-nature-800: #166534;
+  --color-nature-900: #14532d;
 
   --color-warn-green: #22c55e;
   --color-warn-yellow: #eab308;
@@ -22,7 +22,7 @@
 }
 
 :root {
-  --background: var(--color-sand-50);
+  --background: var(--color-nature-50);
   --foreground: #1e293b;
 }
 

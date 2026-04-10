@@ -28,7 +28,7 @@ export default function RootLayout({
       lang="es"
       className={`${inter.variable} ${outfit.variable} h-full antialiased`}
     >
-      <body className={`${inter.variable} ${outfit.variable} h-full antialiased bg-sand-50`}>
+      <body className={`${inter.variable} ${outfit.variable} h-full antialiased bg-nature-50`}>
         <AppShell>
           {children}
         </AppShell>

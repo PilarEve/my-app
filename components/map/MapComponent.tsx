@@ -40,7 +40,7 @@ export default function MapComponent() {
     setMounted(true);
   }, []);
 
-  if (!mounted) return <div className="w-full h-full bg-sand-100 animate-pulse rounded-xl" />;
+  if (!mounted) return <div className="w-full h-full bg-nature-100 animate-pulse rounded-xl" />;
 
   const filteredData = dataPoints.filter((dp) => {
     if (dp.source === 'sensor' && !filters.showSensors) return false;
@@ -67,10 +67,10 @@ export default function MapComponent() {
         >
           <Popup className="rounded-xl">
             <div className="p-1">
-              <h4 className="font-bold text-sand-900 mb-2 capitalize text-sm border-b pb-1">
+              <h4 className="font-bold text-nature-900 mb-2 capitalize text-sm border-b pb-1">
                 {dp.source === 'sensor' ? 'Sensor IoT' : 'Reporte Ciudadano'}
               </h4>
-              <div className="space-y-1 text-xs text-sand-700">
+              <div className="space-y-1 text-xs text-nature-700">
                 <p><span className="font-semibold">Severidad:</span> {
                   dp.severity === 'high' ? 'Alta (Rojo)' 
                   : dp.severity === 'medium' ? 'Media (Amarillo)' 
@@ -83,7 +83,7 @@ export default function MapComponent() {
                   <p><span className="font-semibold">Precipitación:</span> {dp.rainfall} mm</p>
                 )}
                 {dp.description && (
-                  <p className="italic bg-sand-50 p-2 rounded mt-2 border border-sand-100">"{dp.description}"</p>
+                  <p className="italic bg-nature-50 p-2 rounded mt-2 border border-nature-100">"{dp.description}"</p>
                 )}
                 <p className="text-gray-400 mt-2 text-[10px]">
                   {format(new Date(dp.timestamp), "dd/MM/yyyy HH:mm", { locale: es })}

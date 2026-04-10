@@ -37,8 +37,8 @@ export default function ReportPage() {
   return (
     <div className="max-w-3xl mx-auto p-6 md:p-12 space-y-8">
       <div>
-        <h2 className="text-3xl font-heading font-bold text-sand-900">Reportar Evento</h2>
-        <p className="text-sand-600 mt-2">La participación ciudadana es crucial para identificar zonas de riesgo donde no existen sensores instalados. Su reporte se integrará en tiempo real al mapa.</p>
+        <h2 className="text-3xl font-heading font-bold text-nature-900">Reportar Evento</h2>
+        <p className="text-nature-600 mt-2">La participación ciudadana es crucial para identificar zonas de riesgo donde no existen sensores instalados. Su reporte se integrará en tiempo real al mapa.</p>
       </div>
 
       {submitted ? (
@@ -58,15 +58,15 @@ export default function ReportPage() {
             <form onSubmit={handleSubmit} className="space-y-6">
               
               <div className="space-y-3">
-                <label className="block text-sm font-semibold text-sand-800">Ubicación</label>
-                <div className="bg-sand-50 border border-sand-200 rounded-lg p-4 flex items-center gap-3 text-sm text-sand-600 cursor-not-allowed">
-                  <MapPin className="text-sand-400" />
+                <label className="block text-sm font-semibold text-nature-800">Ubicación</label>
+                <div className="bg-nature-50 border border-nature-200 rounded-lg p-4 flex items-center gap-3 text-sm text-nature-600 cursor-not-allowed">
+                  <MapPin className="text-nature-400" />
                   Usando ubicación actual del dispositivo (GPS)
                 </div>
               </div>
 
               <div className="space-y-3">
-                <label className="block text-sm font-semibold text-sand-800">Nivel de Inundación</label>
+                <label className="block text-sm font-semibold text-nature-800">Nivel de Inundación</label>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {(['low', 'medium', 'high'] as SeverityLevel[]).map(level => {
                     const active = severity === level;
@@ -76,7 +76,7 @@ export default function ReportPage() {
                       medium: 'border-warn-yellow text-warn-yellow bg-warn-yellow/10',
                       high: 'border-warn-red text-warn-red bg-warn-red/10'
                     };
-                    const inactiveClass = 'border-sand-200 text-sand-600 bg-white hover:bg-sand-50';
+                    const inactiveClass = 'border-nature-200 text-nature-600 bg-white hover:bg-nature-50';
 
                     return (
                       <button
@@ -85,7 +85,7 @@ export default function ReportPage() {
                         onClick={() => setSeverity(level)}
                         className={`p-4 rounded-xl border-2 transition-all font-medium flex flex-col items-center gap-2 ${active ? colors[level] : inactiveClass}`}
                       >
-                        <div className={`w-4 h-4 rounded-full ${active ? colors[level].split(' ')[0].replace('border', 'bg') : 'bg-sand-200'}`} />
+                        <div className={`w-4 h-4 rounded-full ${active ? colors[level].split(' ')[0].replace('border', 'bg') : 'bg-nature-200'}`} />
                         {labels[level]}
                       </button>
                     );
@@ -94,7 +94,7 @@ export default function ReportPage() {
               </div>
 
               <div className="space-y-3">
-                <label className="block text-sm font-semibold text-sand-800">
+                <label className="block text-sm font-semibold text-nature-800">
                   Descripción / Observaciones (Opcional)
                 </label>
                 <textarea 
@@ -102,12 +102,12 @@ export default function ReportPage() {
                   onChange={(e) => setDescription(e.target.value)}
                   placeholder="Ej. El agua está tapando el cordón de la vereda..."
                   rows={4}
-                  className="w-full rounded-lg border border-sand-200 bg-white px-4 py-3 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-sand-400"
+                  className="w-full rounded-lg border border-nature-200 bg-white px-4 py-3 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-nature-400"
                 />
               </div>
 
-              <div className="pt-4 flex items-center justify-between border-t border-sand-100">
-                <div className="text-xs text-sand-500 flex items-center gap-1">
+              <div className="pt-4 flex items-center justify-between border-t border-nature-100">
+                <div className="text-xs text-nature-500 flex items-center gap-1">
                   <Info size={14} /> Los reportes son anónimos.
                 </div>
                 <Button type="submit" className="px-8">
